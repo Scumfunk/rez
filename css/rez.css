@@ -1,0 +1,183 @@
+.navbar-fixed-left {
+    width: 140px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+    float: none;  /* Cancel default li float: left */
+    width: 139px;
+}
+
+.navbar-fixed-left + .container {
+    padding-left: 160px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+    margin-top: -50px;
+    margin-left: 140px;
+}
+
+.form{
+    background-color: white;
+    margin: 2em;
+    box-shadow: rgb(76, 75, 75) 0px 0px 25px -6px;
+    padding: 10px;
+}
+.form div{
+    margin-bottom: 10px;
+}
+
+.submit{
+    text-align: right;
+}
+.fileinput-button {
+    display: table;
+    margin-top: 5px;
+}
+.form-group{
+    margin: 0px;
+}
+.fileinput-button .icon-add-file {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 0.8em;
+}
+.fileinput-button p {
+    margin: 0;
+}
+.fileinput-button .input-file {
+    position: relative;
+    overflow: hidden;
+}
+.fileinput-button .input-file input {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: 1;
+    cursor: pointer;
+}
+.fileinput-button .input-file span {
+    text-decoration: none;
+    border-bottom: 1px dashed #007AC2;
+    color: #007AC2;
+    cursor: pointer !important;
+    padding-right: 3px;
+}
+.fileinput-button .input-file-clear {
+    display: table-cell;
+    vertical-align: middle;
+}
+.fileinput-button i {
+    cursor: pointer;
+    z-index: 150;
+    opacity: 0;
+    margin-left: 5px;
+    height: 18px;
+}
+.fileinput-button .italic {
+    font-style: italic;
+}
+
+
+.sprite {
+    background-image: url('../img/layouts-sprite.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-add-file {
+    width: 14px;
+    height: 22px;
+    background-position: -4px -4px;
+}
+
+.sprite-add_object {
+    width: 37px;
+    height: 37px;
+    background-position: -26px -4px;
+}
+
+.sprite-checkbox {
+    width: 15px;
+    height: 15px;
+    background-position: -71px -4px;
+}
+
+.sprite-checkbox-active {
+    width: 15px;
+    height: 15px;
+    background-position: -71px -27px;
+}
+
+.sprite-delete {
+    width: 15px;
+    height: 15px;
+    background-position: -4px -50px;
+}
+
+.sprite-log-out {
+    width: 18px;
+    height: 17px;
+    background-position: -27px -50px;
+}
+
+.sprite-logo {
+    width: 67px;
+    height: 59px;
+    background-position: -94px -4px;
+}
+
+.sprite-sel-down {
+    width: 16px;
+    height: 8px;
+    background-position: -53px -71px;
+}
+
+.sprite-sel-up {
+    width: 16px;
+    height: 8px;
+    background-position: -77px -71px;
+}
+
+.sprite-sort-down {
+    width: 7px;
+    height: 5px;
+    background-position: -169px -4px;
+}
+
+.sprite-sort-down:hover {
+    width: 7px;
+    height: 5px;
+    background-position: -169px -17px;
+}
+
+.sprite-sort-down.active {
+    width: 7px;
+    height: 5px;
+    background-position: -169px -17px;
+}
+
+.sprite-sort-up {
+    width: 7px;
+    height: 5px;
+    background-position: -169px -30px;
+}
+
+.sprite-sort-up:hover {
+    width: 7px;
+    height: 5px;
+    background-position: -169px -43px;
+}
+
+.sprite-sort-up.active {
+    width: 7px;
+    height: 5px;
+    background-position: -169px -43px;
+}
+
