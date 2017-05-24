@@ -1,5 +1,6 @@
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Предсказание оттока клиентов</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -34,11 +35,48 @@
         </div>
     </div>
 </nav>
-<div class="row container">
-    <div class="col-md-6 offset-left-3">
-        <canvas id="myChart"></canvas>
+<div class="row">
+    <div class="col-md-1"><br></div>
+    <div class="col-md-10">
+        <table id="myTable" class="table">
+            <tr class="header">
+                <th class="col-md-8">График</th>
+                <th class="col-md-2">Клиент</th>
+                <th class="col-md-2">Результат</th>
+            </tr>
+            <tr>
+                <td class="col-md-8">
+                    <canvas id="myChart1"></canvas>
+                </td>
+                <td class="col-md-2">Клиент 1</td>
+                <td class="col-md-2">0.17</td>
+            </tr>
+            <tr>
+                <td class="col-md-8">
+                    <canvas id="myChart2"></canvas>
+                </td>
+                <td class="col-md-2">Клиент 2</td>
+                <td class="col-md-2">0.91</td>
+            </tr>
+            <tr>
+                <td class="col-md-8">
+                    <canvas id="myChart3"></canvas>
+                </td>
+                <td class="col-md-2">Клиент 3</td>
+                <td class="col-md-2">0.23</td>
+            </tr>
+            <tr>
+                <td class="col-md-8">
+                    <canvas id="myChart4"></canvas>
+                </td>
+                <td class="col-md-2">Клиент 4</td>
+                <td class="col-md-2">0.5</td>
+            </tr>
+        </table>
     </div>
 </div>
+
+
 
 
 
@@ -53,6 +91,6 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-<script src="js/rez.js"></script>
+<script src="js/rez-rez.js"></script>
 </body>
 </html>

@@ -1,0 +1,84 @@
+<html>
+<meta charset="UTF-8">
+<head>
+    <title>Предсказание оттока клиентов</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/material-kit.css">
+    <link rel="stylesheet" href="css/rez.css">
+
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Предсказание оттока клиентов</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Загрузка данных</a></li>
+                <li class="active"><a href="models.html">Выбор модели</a></li>
+                <li><a href="results.html">Результаты</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="row">
+    <div class="col-md-3"><br></div>
+    <div class="col-md-6 form">
+        <div class="col-md-12">
+            <label for="selectpicker">Выберите модель классификации: </label>
+            <br>
+            <select id="selectpicker" class="selectpicker" data-live-search="true" data-style="btn-info">
+                <option>random_forest3 (17.05.17 19:51)</option>
+                <option>random_forest2 (16.05.17 22:07)</option>
+                <option>logistic_regression_test (16.05.17 21:19)</option>
+                <option>random_forest_test (15.05.17 23:53)</option>
+            </select>
+        </div>
+        <div class="col-md-12">
+            <label for="selectpicker">Выберите модель прогнозирования: </label>
+            <br>
+            <select id="selectpicker" class="selectpicker" data-live-search="true" data-style="btn-info">
+                <option>Линейная регрессия</option>
+                <option>Авторегрессия</option>
+            </select>
+        </div>
+
+        <div class="col-md-12 submit">
+            <button class="btn btn-success" id="run-prediction-button">Запустить</button>
+        </div>
+    </div>
+    <div class="col-md-3"><br></div>
+</div>
+
+<div id="overlay">
+    <div id="loader"></div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/material.min.js"></script>
+<script src="js/material-kit.js"></script>
+<!-- Latest compiled and minified CSS -->
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+<script src="js/rez-models.js"></script>
+</body>
+</html>

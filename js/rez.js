@@ -64,3 +64,19 @@ $('#datepicker').datepicker({
     viewMode: "months",
     minViewMode: "months"
 });
+
+var myVar;
+
+function runLoader() {
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("loader").style.display = "block";
+    myVar = setTimeout(goToResults, 3000);
+}
+
+function goToResults() {
+    window.location.href = '/rez/models.html'
+}
+
+$('#upload-button').click(function () {
+    runLoader()
+})
